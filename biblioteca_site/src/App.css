@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: #0E5A46;
-    height: 70px;
+    height: 100px;
     width: 100%;
     color: white;
   }
@@ -21,18 +21,41 @@ header {
     color:white;
   }
   
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color:white;
-    margin-right: 40px;
-    text-decoration: none;
+  .botaoLogin {
+    height: 28px;
+    margin-right: 30px;
+    background-color: #0E5A46;
+    border: none;
+    color: white;
+    margin-bottom: 4px;
+    
+    
+  }
+
+  .botaoCadastro {
+    height: 28px;
+    margin-right: 30px;
+    background-color: #0E5A46;
+    border: none;
+    color: white;
+    margin-bottom: 4px;
   }
   
-  .menu li {
-    display: inline-block;
-    margin-right: 20px;
+  .botaoLogout {
+    height: 28px;
+    margin-right: 30px;
+    background-color: #0E5A46;
+    border: none;
     color: white;
-    text-decoration: none;
+ margin-bottom: 4px;
+  }
+
+  .botaoList {
+    height: 30px;
+    margin-right: 30px;
+    background-color: #0E5A46;
+    border: none;
+    color: white;
+    margin-bottom: 4px;
+    
   }
