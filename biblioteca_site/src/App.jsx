@@ -1,4 +1,10 @@
 import logo from "./assets/logo.png"
+import { Divteste } from "./style"
+import { useState, useEffect } from "react"
+import Home from "./Pages/Home/home"
+import Login from "./Pages/Login/login"
+import Cadastro from "./Pages/Cadastro/cadastro"
+
 
 function App() {
 
@@ -21,6 +27,12 @@ function App() {
   
 
  </header>
+
+ <div>
+  <Home>
+
+  </Home>
+ </div>
     </div>
   )
 }
