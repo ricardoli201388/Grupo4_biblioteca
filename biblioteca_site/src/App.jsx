@@ -1,3 +1,4 @@
+import logo from "./assets/logo.png"
 
 function App() {
 
@@ -5,7 +6,7 @@ function App() {
     <div>
       <header>
   <div class="logo">
-    <img src="logo.png" alt="Logo da Livraria"></img>
+    <img src={logo} alt="Logo da Livraria"></img>
   </div>
   <nav class="menu">
     <ul>
