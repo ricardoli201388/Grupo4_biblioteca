@@ -4,12 +4,13 @@ import { useState, useEffect } from "react"
 import Home from "./Pages/Home/home"
 import Login from "./Pages/Login/login"
 import Cadastro from "./Pages/Cadastro/cadastro"
-
+import Routes from "./routes"
 
 function App() {
 
   return (
     <div>
+      <Routes/>
       <header>
   <div class="logo">
     <img src={logo} alt="Logo da Livraria"></img>
@@ -28,11 +29,6 @@ function App() {
 
  </header>
 
- <div>
-  <Home>
-
-  </Home>
- </div>
     </div>
   )
 }
