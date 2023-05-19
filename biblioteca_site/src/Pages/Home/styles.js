@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styled from"styled-components";
 
 export const Container = styled.div`
@@ -13,3 +14,6 @@ export const Titulo = styled.p`
   font-size: 100px;
   color: green;
 `;
+=======
+import styled from "styled-components";
+>>>>>>> main
