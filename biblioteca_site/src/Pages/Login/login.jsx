@@ -1,8 +1,13 @@
+import { Background } from "./styles";
+
 function Login(){
 
     return (
     <div>
-        Página Login!!!! 
+        <Background>
+       Seção Login
+        </Background>
+        Footer!!! 
     </div>
     
     )
