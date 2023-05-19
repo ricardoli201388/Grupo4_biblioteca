@@ -1,12 +1,11 @@
+import { Container, Titulo } from "./styles";
+
 function Login(){
 
-    return (
-    <div>
-        Página Login!!!! 
-    </div>
-    
-    )
-    
-    }
-    
-    export default Login;
+return (
+    <Container>
+        <Titulo>Login</Titulo>  
+    </Container>
+)
+}
+export default Login;

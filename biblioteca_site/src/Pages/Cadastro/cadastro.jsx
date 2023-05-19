@@ -1,12 +1,11 @@
+import { Container, Titulo } from "./styles";
+
 function Cadastro(){
 
-    return (
-    <div>
-        Página Cadastro!!!!
-    </div>
-    
-    )
-    
-    }
-    
-    export default Cadastro;
+return (
+    <Container>
+        <Titulo>Cadastro</Titulo>  
+    </Container>
+)
+}
+export default Cadastro;

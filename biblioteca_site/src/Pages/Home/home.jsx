@@ -1,12 +1,11 @@
+import { Container, Titulo } from "./styles";
+
 function Home(){
 
 return (
-<div>
-    Página Home!!!!
-</div>
-
+    <Container>
+        <Titulo>Home</Titulo>  
+    </Container>
 )
-
 }
-
 export default Home;
