@@ -7,11 +7,14 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
   background-color: #0E5A46;
+  justify-content: space-between;
 `;
 
 export const Logo = styled.img`
     height: 50px;
     width: 250px;
+    margin: 20px;
+    
 
     /* @media (max-width: 700px) {
     width: 40px;
@@ -25,14 +28,16 @@ export const DivHeader = styled.div`
   font-size: 50px;
   color: red;
   height: auto;
-  width: 300px;
+  width: auto;
 `;
 
 export const Text = styled.p`
   font-size: 23px;
   color: white;
   font-family: "poppins", sans-serif;
-
+  margin-top: 33px;
+  padding-right: 20px ;
+  
 `;
 
 
