@@ -45,10 +45,12 @@ export const DivHeader = styled.div`
 
 `;
 
-export const Text = styled.p`
+export const Text = styled.button`
   font-size: 23px;
   color: white;
+  background-color: #0E5A46;
   font-family: "poppins", sans-serif;
+  border: none;
   margin-right: 20px;
   margin-top: 25px;
 `;

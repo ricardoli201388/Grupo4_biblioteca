@@ -36,8 +36,8 @@ export const Botao = styled.button`
 
 display: inline-block;
   margin-top: 3%;
-  margin-left: 45%;
-  margin-right: 45%;
+  margin-left: 42%;
+  margin-right: 42%;
   padding: 12px 24px;
   font-size: 18px;
   font-weight: bold;
