@@ -13,8 +13,10 @@ export const Titulo = styled.p`
   color: white;
   width: 100%;
   text-align: center;
+  
   @media (max-width: 700px){
-    display:${(props)=>props.sumir ?"none":"block"}
+    display:${(props)=>props.sumir ?"none":"block"};
+    font-size: 15px;
   }
   `;
 
@@ -29,7 +31,7 @@ export const Cabecalho = styled.div`
 `
 
 export const Texto = styled.p`
-  font-size: 23px;
+  font-size: 20px;
   color: black;
   padding-top:50px;
 `
@@ -43,14 +45,14 @@ export const Tabela = styled.div`
 export const ColunaFuncionario = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
+  margin-left: 10%;
   padding-bottom:50px;
 `
 
 export const ColunaCargo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 140px;
+  margin-left: 15%;
   
   @media (max-width: 700px){
     display:${(props)=>props.sumir ?"none":"block"}
@@ -59,10 +61,11 @@ export const ColunaCargo = styled.div`
 export const ColunaChegada = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 150px;
+  margin-right: 18%;
+  margin-left: 7%;
 `
 export const ColunaCronometro = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 150px;
+  margin-right: 10%;
 `

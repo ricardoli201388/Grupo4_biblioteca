@@ -29,10 +29,12 @@ export const Logo = styled.img`
     margin-top: 15px;
     margin-left: 100px;
 
-    /* @media (max-width: 700px) {
-    width: 40px;
-    height: 40px;
-  } */
+     @media (max-width: 700px) {
+      height: 20px;
+      width: 110px;
+      margin-top: 30px;
+      margin-left: 20px;
+  } 
 `;
 
 export const DivHeader = styled.div`
@@ -52,7 +54,18 @@ export const Text = styled.button`
   font-family: "poppins", sans-serif;
   border: none;
   margin-right: 20px;
-  margin-top: 25px;
+  margin-top: 5px;
+
+  @media (max-width: 700px) {
+    font-size: 15px;
+    color: white;
+    background-color: #0E5A46;
+    font-family: "poppins", sans-serif;
+    border: none;
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+  } 
 `;
 
 
