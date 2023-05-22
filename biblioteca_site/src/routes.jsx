@@ -9,6 +9,7 @@ import Home from "./Pages/Home/home";
 import Login from "./Pages/Login/login";
 import Cadastro from "./Pages/Cadastro/cadastro";
 import Editar from "./Pages/Editar/editar";
+import Dados from "./Pages/Dados/dados";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
             <Route path="Login" element={<Login/>}/>
             <Route path="Cadastro" element={<Cadastro/>}/>
             <Route path="Editar" element={<Editar/>}/>
+            <Route path="Dados" element={<Dados/>}/>
         </Route>
         
     )
