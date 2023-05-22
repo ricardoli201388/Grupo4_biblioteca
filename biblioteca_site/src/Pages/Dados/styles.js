@@ -16,6 +16,10 @@ export const Titulo = styled.p`
   font-size: 40px;
   font-weight: bold;
   color: white;
+  @media (max-width: 700px) {
+    font-size: 30px;
+    margin-left: 10%;
+} 
 `;
 
 export const Texto = styled.p`
@@ -24,6 +28,13 @@ export const Texto = styled.p`
   margin-bottom: 1%;
   font-size: 20px;
   color: white;
+
+  @media (max-width: 700px) {
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+} 
 `;
 export const Botao = styled.button`
 display: inline-block;
@@ -39,4 +50,11 @@ display: inline-block;
   border-radius: 6px;
   border: none;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 10px;
+    
+} 
 `;
