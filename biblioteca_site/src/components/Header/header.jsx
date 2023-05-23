@@ -1,9 +1,9 @@
-import { Container, Logo, DivHeader, BotaoCadastro } from "./styles";
+import { Container, Logo, DivHeader, BotaoCadastro, StyledLink } from "./styles";
 import logoIcon from "../../assets/logo.png"
 import { FaBars } from 'react-icons/fa'
 import React, { useState } from "react";
 import Sidebar from '../Sidebar'
-// import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Botaologin from '../Botaologin'
 import Botaocadastro from '../BotaoCadastro'
 
@@ -17,12 +17,13 @@ function Header() {
 return (
     <Container>
         <FaBars onClick={showSidebar} /> 
-            {sidebar && <sidebar active={setSidebar} />}
+            {sidebar && <Sidebar active={setSidebar} />}
         <Logo src={logoIcon}/>
         
         <DivHeader>
-            <Botaologin />
-            <Botaocadastro/>
+            <StyledLink to="/Login">Login</StyledLink>
+            <StyledLink to='/cadastro'>Cadastre-se</StyledLink>
+            
         </DivHeader> 
     </Container>
 )

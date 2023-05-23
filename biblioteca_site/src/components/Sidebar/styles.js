@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
 background-color: #074132;
@@ -15,6 +16,8 @@ animation: showSidebar .4s;
     color: white;
     width: 30px;
     height: 30px;
+    margin-top: 25px;
+    margin-left: 25px;
     cursor: pointer;
 
 
@@ -37,3 +40,7 @@ export const Content = styled.div`
 margin-top: 100px;
 
 `;
+
+export const StyledLink = styled(Link)` 
+    text-decoration: none;
+`
