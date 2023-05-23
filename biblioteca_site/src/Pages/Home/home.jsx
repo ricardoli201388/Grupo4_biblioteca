@@ -9,7 +9,6 @@ import {
     ColunaCronometro,
     Texto } from "./styles";
 
-
 function Home(){
 
 return (
@@ -53,9 +52,15 @@ return (
             </ColunaCronometro>
             
         </Tabela>
+
     </Container>
     
     
 )
+
 }
 export default Home;
+
+
+
+   

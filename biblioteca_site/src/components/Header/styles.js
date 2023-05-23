@@ -50,6 +50,7 @@ export const DivHeader = styled.div`
 export const BotaoLogin = styled.button`
   font-size: 23px;
   color: white;
+  background-color: #0E5A46;
   font-family: "poppins", sans-serif;
   margin-right: 20px;
   margin-top: 20px;
@@ -86,4 +87,5 @@ font-size: 23px;
     border-width: 1px;
   }
 `
+
 

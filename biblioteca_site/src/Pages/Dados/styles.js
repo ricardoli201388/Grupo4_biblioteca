@@ -1,4 +1,4 @@
-import styled from"styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -12,6 +12,7 @@ export const Container = styled.div`
 export const Titulo = styled.p`
   margin-top: 5%;
   margin-left: 20%;
+  margin-bottom: 5%;
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -21,38 +22,26 @@ export const Titulo = styled.p`
 } 
 `;
 
-export const Caixa_texto = styled.input`
-  margin-left: 30%;
-  margin-right: 30%;
-  border: none;
-  border-radius: 6px;
-  font-size: 30px;
-  background-color: white;
-  @media (max-width: 700px) {
-    margin-left: 15%;
-    margin-right: 15%;
-    
-} 
-`
 export const Texto = styled.p`
   margin-top: 0.5%;
   margin-left: 30%;
   margin-bottom: 1%;
   font-size: 20px;
   color: white;
+
   @media (max-width: 700px) {
     font-size: 15px;
-    margin-top: 10%;
-    margin-left: 15%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 15%;
 } 
-`
+`;
 export const Botao = styled.button`
-
 display: inline-block;
-  margin-top: 3%;
-  margin-left: 40%;
-  margin-right: 40%;
-  padding: 12px 24px;
+  margin-top: 5%;
+  margin-left: 65%;
+  margin-right: 25%;
+  padding: 12px;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -61,12 +50,11 @@ display: inline-block;
   border-radius: 6px;
   border: none;
   cursor: pointer;
+
   @media (max-width: 700px) {
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-top: 15%;
+    margin-left: 25%;
     font-size: 10px;
     
-    
 } 
-`
+`;
