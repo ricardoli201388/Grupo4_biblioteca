@@ -1,4 +1,4 @@
-import { Container, Logo, DivHeader, BotaoCadastro } from "./styles";
+import { Container, Logo, DivHeader, BotaoCadastro, BotaoLogin } from "./styles";
 import logoIcon from "../../assets/logo.png"
 import { FaBars } from 'react-icons/fa'
 import React, { useState } from "react";
