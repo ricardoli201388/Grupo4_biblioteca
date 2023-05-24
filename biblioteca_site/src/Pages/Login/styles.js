@@ -49,6 +49,7 @@ export const Texto = styled.p`
 export const Botao = styled.button`
 
 display: inline-block;
+  margin-bottom: 10%;
   margin-top: 3%;
   margin-left: 40%;
   margin-right: 40%;

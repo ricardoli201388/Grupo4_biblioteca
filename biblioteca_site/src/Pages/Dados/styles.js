@@ -38,6 +38,7 @@ export const Texto = styled.p`
 `;
 export const Botao = styled.button`
 display: inline-block;
+  margin-bottom: 10%;
   margin-top: 5%;
   margin-left: 65%;
   margin-right: 25%;
