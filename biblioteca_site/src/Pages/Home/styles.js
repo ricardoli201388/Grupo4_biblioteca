@@ -70,6 +70,8 @@ export const ColunaCronometro = styled.div`
 `;
 
 export const Containercarrossel = styled.div`
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 2%;
   margin-bottom: 2%;
 `;
