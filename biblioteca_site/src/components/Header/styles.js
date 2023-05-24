@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import styled from"styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
   align-content: center;
   width: 100%;
   height: 80px;
-  background-color: #0E5A46;
+  background-color: #0e5a46;
   justify-content: space-between;
   box-shadow: 0 0 20px 3px;
 
@@ -18,24 +18,27 @@ export const Container = styled.div`
     margin-top: 23px;
     margin-left: 27px;
     cursor: pointer;
-
-
-}
-
+    @media (max-width: 700px) {
+      height: 20px;
+      width: 20px;
+      margin-top: 28px;
+      margin-left: 10px;
+    }
+  }
 `;
 
-
-
 export const Logo = styled.img`
-    height: 50px;
-    width: 270px;
-    margin-top: 15px;
-    margin-left: 100px;
+  height: 55px;
+  width: 265px;
+  margin-top: 15px;
+  margin-left: 100px;
 
-    /* @media (max-width: 700px) {
-    width: 40px;
-    height: 40px;
-  } */
+  @media (max-width: 700px) {
+    height: 25px;
+    width: 120px;
+    margin-top: 25px;
+    margin-left: 35px;
+  }
 `;
 
 export const DivHeader = styled.div`
@@ -44,19 +47,19 @@ export const DivHeader = styled.div`
   font-size: 50px;
   color: white;
   height: 80px;
-  width: 300px;
-
+  //width: 300px;
+  //margin-top: 25px;
 `;
 
 export const BotaoLogin = styled.button`
   font-size: 23px;
   color: white;
-  background-color: #0E5A46;
+  background-color: #0e5a46;
   font-family: "poppins", sans-serif;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 25px;
-  background-color: #0E5A46;
+  background-color: #0e5a46;
   border: none;
   cursor: pointer;
 
@@ -70,13 +73,13 @@ export const BotaoLogin = styled.button`
 `;
 
 export const BotaoCadastro = styled.button`
-font-size: 23px;
+  font-size: 23px;
   color: white;
   font-family: "poppins", sans-serif;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 25px;
-  background-color: #0E5A46;
+  background-color: #0e5a46;
   border: none;
   cursor: pointer;
 
@@ -87,15 +90,15 @@ font-size: 23px;
     border-color: white;
     border-width: 1px;
   }
-`
+`;
 export const StyledLink = styled(Link)`
-font-size: 23px;
+  font-size: 23px;
   color: white;
   font-family: "poppins", sans-serif;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 25px;
-  background-color: #0E5A46;
+  background-color: #0e5a46;
   text-decoration: none;
 
   &:hover {
@@ -104,7 +107,12 @@ font-size: 23px;
     border: solid;
     border-color: white;
     border-width: 1px;
+  }
 
-     }
-`
-
+  @media (max-width: 700px) {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+`;

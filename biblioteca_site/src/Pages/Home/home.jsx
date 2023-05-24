@@ -12,25 +12,23 @@ import {
   Texto,
 } from "./styles";
 
-import { Carousel } from "antd"; //
+import { Carousel } from "antd";
+import {
+  carrosselprojetos,
+  carrosselreclamações,
+  carrosselnoticias,
+  carrosselblog,
+} from "../../assets";
 
 function Home() {
   return (
     <Container>
       <Containercarrossel>
         <Carousel autoplay>
-          <Carrosselimg>
-            <h3>1</h3>
-          </Carrosselimg>
-          <Carrosselimg>
-            <h3>2</h3>
-          </Carrosselimg>
-          <Carrosselimg>
-            <h3>3</h3>
-          </Carrosselimg>
-          <Carrosselimg>
-            <h3>4</h3>
-          </Carrosselimg>
+          <Carrosselimg src={carrosselprojetos} />
+          <Carrosselimg src={carrosselreclamações} />
+          <Carrosselimg src={carrosselnoticias} />
+          <Carrosselimg src={carrosselblog} />
         </Carousel>
       </Containercarrossel>
 

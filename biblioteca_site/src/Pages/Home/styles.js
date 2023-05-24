@@ -76,7 +76,4 @@ export const Containercarrossel = styled.div`
   margin-bottom: 2%;
 `;
 
-export const Carrosselimg = styled.div`
-  background-color: black;
-  height: 500px;
-`;
+export const Carrosselimg = styled.img``;
