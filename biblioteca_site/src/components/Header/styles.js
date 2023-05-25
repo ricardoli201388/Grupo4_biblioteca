@@ -110,8 +110,8 @@ export const StyledLink = styled(Link)`
   }
 
   @media (max-width: 700px) {
-    font-size: 13px;
-    margin-right: 5px;
+    font-size: 12px;
+    margin-right: 3px;
     margin-top: 30px;
     margin-left: 5px;
   }

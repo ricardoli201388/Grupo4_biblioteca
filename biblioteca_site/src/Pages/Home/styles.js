@@ -6,6 +6,7 @@ export const Container = styled.div`
   align-content: center;
   width: 100%;
   background-color: #28846c;
+  font-family: "poppins";
 `;
 
 export const Titulo = styled.p`
@@ -30,7 +31,7 @@ export const Cabecalho = styled.div`
 `;
 
 export const Texto = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   padding-top: 50px;
 `;
