@@ -12,6 +12,7 @@ import {
   Texto,
 } from "./styles";
 
+<<<<<<< Updated upstream
 import { Carousel } from "antd";
 import {
   carrosselprojetos,
@@ -20,6 +21,9 @@ import {
   carrosselblog,
 } from "../../assets";
 
+=======
+import { Carousel } from "antd"; //
+>>>>>>> Stashed changes
 function Home() {
   return (
     <Container>

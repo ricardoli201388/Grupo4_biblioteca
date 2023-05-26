@@ -2,7 +2,6 @@ import {
   Container,
   Logo,
   DivHeader,
-  BotaoCadastro,
   StyledLink,
 } from "./styles";
 import logoIcon from "../../assets/logo.png";
