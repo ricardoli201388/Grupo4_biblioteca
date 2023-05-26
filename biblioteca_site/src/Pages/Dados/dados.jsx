@@ -1,4 +1,6 @@
 import { Container, Titulo, Texto, Botao} from "./styles";
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 function Dados(){
 
@@ -9,7 +11,7 @@ function Dados(){
             <Texto>Cargo:</Texto>
             <Texto>E-mail:</Texto>
         
-        <Botao>Editar dados</Botao>
+        <Link to='/Editar'><Botao>Editar dados</Botao></Link>
         </Container>
     )
     }

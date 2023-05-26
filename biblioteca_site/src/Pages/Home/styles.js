@@ -6,11 +6,11 @@ export const Container = styled.div`
   align-content: center;
   width: 100%;
   background-color: #28846c;
-<<<<<<< Updated upstream
   font-family: "poppins";
-=======
-  overflow: hidden;
->>>>>>> Stashed changes
+
+  @media (max-width: 700px) {
+    height: 40px;
+  }
 `;
 
 export const Titulo = styled.p`
@@ -82,12 +82,4 @@ export const Containercarrossel = styled.div`
   overflow: hidden;
 `;
 
-<<<<<<< Updated upstream
 export const Carrosselimg = styled.img``;
-=======
-export const Carrosselimg = styled.div`
-  background-color: black;
-  height: 500px;
-  overflow: hidden;
-`;
->>>>>>> Stashed changes
