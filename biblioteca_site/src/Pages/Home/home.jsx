@@ -7,6 +7,7 @@ import {
   Tabela,
   ColunaFuncionario,
   ColunaCargo,
+  ColunaStatus,
   ColunaChegada,
   ColunaCronometro,
   Texto,
@@ -35,6 +36,7 @@ function Home() {
       <Cabecalho>
         <Titulo>Funcionário</Titulo>
         <Titulo sumir>Cargo</Titulo>
+        <Titulo sumir>Status</Titulo>
         <Titulo>Chegada</Titulo>
         <Titulo>Cronometro</Titulo>
       </Cabecalho>
@@ -53,6 +55,13 @@ function Home() {
           <Texto>Trainee</Texto>
           <Texto>Trainee</Texto>
         </ColunaCargo>
+
+        <ColunaStatus sumir>
+          <Texto>Feliz</Texto>
+          <Texto>Animado</Texto>
+          <Texto>Cansado</Texto>
+          <Texto>Alegre</Texto>
+        </ColunaStatus>
 
         <ColunaChegada>
           <Texto>20:00</Texto>
