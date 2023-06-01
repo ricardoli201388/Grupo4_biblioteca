@@ -1,21 +1,16 @@
-import {
-  Container,
-  Titulo,
-  Caixa_texto,
-  Texto,
-  Botao,
-  Form,
-  Campo,
-  Label,
-  Input,
-  Button,
-} from "./styles";
-import { useState } from "react";
-import api from "../../services/api";
-function Login() {
-  const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
-  const [carregando, setCarregando] = useState(false);
+import { Container, Titulo, Caixa_texto, Texto, Botao, Form, Campo, Label, Input, Button} from "./styles";
+import { useState } from 'react'
+import api from '../../services/api'
+import jwtDecode from "jwt-decode";
+import { useAuthStore } from "../../stores/auth";
+
+
+function Login(){
+const [email, setEmail] = useState("")
+const [senha, setSenha] = useState("")
+const token = useAuthStore((state) => state.token);
+const usuario = useAuthStore((state) => state.usuario);
+const setToken = useAuthStore((state) => state.setToken );
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -65,9 +60,10 @@ function Login() {
             />
           </Label>
         </Campo>
-        <Button type="submit">Login</Button>
-      </Form>
+        <Button type='submit'>Login</Button> 
+    </Form>
+    
     </Container>
-  );
+)
 }
 export default Login;
