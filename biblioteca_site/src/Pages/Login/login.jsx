@@ -1,40 +1,73 @@
-import { Container, Titulo, Caixa_texto, Texto, Botao, Form, Campo, Label, Input, Button} from "./styles";
-import { useState } from 'react'
-import api from '../../services/api'
-function Login(){
-const [email, setEmail] = useState("")
-const [senha, setSenha] = useState("")
+import {
+  Container,
+  Titulo,
+  Caixa_texto,
+  Texto,
+  Botao,
+  Form,
+  Campo,
+  Label,
+  Input,
+  Button,
+} from "./styles";
+import { useState } from "react";
+import api from "../../services/api";
+function Login() {
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [carregando, setCarregando] = useState(false);
 
-const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({email, senha });
+    // console.log({ email, senha });
     try {
-        const res = await api.post("/login", { email, senha });
-        console.log(res)
-    } catch(error){
-        alert(erro.message)
+      setCarregando(true);
+      const res = await api.post("/login", { email, senha });
+      //console.log(res);
+    } catch (error) {
+      console.error(erro);
+      alert(erro.message);
+    } finally {
+      setCarregando(false);
     }
-};
-return (
+  };
+
+  if (carregando)
+    return (
+      <Container>
+        <h1>Carregando...</h1>
+      </Container>
+    );
+
+  return (
     <Container>
-         <Titulo>Login</Titulo>  
-    <Form onSubmit={handleSubmit}>
+      <Titulo>Login</Titulo>
+      <Form onSubmit={handleSubmit}>
         <Campo>
-            <Label htmlFor='email'>
-                E-mail:
-                <Input type='email' id='email' required onChange={(e) => setEmail(e.target.value)}/>
-            </Label>
+          <Label htmlFor="email">
+            E-mail:
+            <Input
+              type="email"
+              id="email"
+              required
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Label>
         </Campo>
         <Campo>
-            <Label htmlFor='senha'>
-                Senha:
-                <Input type='password' id='senha' required onChange={(e) => setSenha(e.target.value)}/>
-            </Label>
+          <Label htmlFor="senha">
+            Senha:
+            <Input
+              type="password"
+              id="senha"
+              required
+              onChange={(e) => setSenha(e.target.value)}
+            />
+          </Label>
         </Campo>
-        <Button type='submit'>Login</Button> 
-    </Form>
-    
+        <Button type="submit">Login</Button>
+      </Form>
     </Container>
-)
+  );
 }
 export default Login;
