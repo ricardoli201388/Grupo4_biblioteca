@@ -3,6 +3,7 @@ import { useState } from 'react'
 import api from '../../services/api'
 import jwtDecode from "jwt-decode";
 import { useAuthStore } from "../../stores/auth";
+import { useNavigate } from "react-router";
 
 
 function Login(){
@@ -12,6 +13,7 @@ const [carregando, setCarregando] = useState(false);
 const token = useAuthStore((state) => state.token);
 const usuario = useAuthStore((state) => state.usuario);
 const setToken = useAuthStore((state) => state.setToken );
+const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,10 +24,11 @@ const setToken = useAuthStore((state) => state.setToken );
       const { token } = res.data;
       
       setToken(token);
+      navigate('/')
       //console.log(res);
     } catch (error) {
       console.error(erro);
-      alert(erro.message);
+      alert(erro.reponse.data.message);
     } finally {
       setCarregando(false);
     }

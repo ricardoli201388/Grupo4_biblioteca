@@ -102,11 +102,11 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    /* color: black; */
+    color: black; 
     /* transition: .4s */
-    border: solid;
+    /* border: solid;
     border-color: white;
-    border-width: 1px;
+    border-width: 1px; */
   }
 
   @media (max-width: 700px) {
@@ -116,3 +116,21 @@ export const StyledLink = styled(Link)`
     margin-left: 5px;
   }
 `;
+
+export const BotaoLogout = styled.button`
+    font-size: 23px;
+  color: white;
+  background-color: #0e5a46;
+  font-family: "poppins", sans-serif;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color: #0e5a46;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+
+`
