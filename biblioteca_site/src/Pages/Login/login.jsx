@@ -8,6 +8,7 @@ import { useAuthStore } from "../../stores/auth";
 function Login(){
 const [email, setEmail] = useState("")
 const [senha, setSenha] = useState("")
+const [carregando, setCarregando] = useState(false);
 const token = useAuthStore((state) => state.token);
 const usuario = useAuthStore((state) => state.usuario);
 const setToken = useAuthStore((state) => state.setToken );
@@ -18,6 +19,9 @@ const setToken = useAuthStore((state) => state.setToken );
     try {
       setCarregando(true);
       const res = await api.post("/login", { email, senha });
+      const { token } = res.data;
+      
+      setToken(token);
       //console.log(res);
     } catch (error) {
       console.error(erro);
