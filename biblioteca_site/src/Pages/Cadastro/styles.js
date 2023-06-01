@@ -29,6 +29,8 @@ export const Caixa_texto = styled.input`
   border-radius: 6px;
   font-size: 30px;
   background-color: white;
+  padding-left: 10px;
+
   @media (max-width: 700px) {
     margin-left: 15%;
     margin-right: 15%;

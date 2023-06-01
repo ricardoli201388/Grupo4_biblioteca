@@ -7,10 +7,6 @@ export const Container = styled.div`
   width: 100%;
   background-color: #28846c;
   font-family: "poppins";
-
-  @media (max-width: 700px) {
-    height: 40px;
-  }
 `;
 
 export const Titulo = styled.p`
@@ -49,7 +45,7 @@ export const Tabela = styled.div`
 export const ColunaFuncionario = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 6%;
   padding-bottom: 50px;
 `;
 
@@ -57,21 +53,32 @@ export const ColunaCargo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 15%;
-
+  margin-right: 3%;
   @media (max-width: 700px) {
     display: ${(props) => (props.sumir ? "none" : "block")};
   }
 `;
+
+export const ColunaStatus = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  //margin-left: 1%;
+  @media (max-width: 700px) {
+    display: ${(props) => (props.sumir ? "none" : "block")};
+  }
+`;
+
 export const ColunaChegada = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 18%;
-  margin-left: 7%;
+  margin-right: 16%;
+  margin-left: 8%;
 `;
 export const ColunaCronometro = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 10%;
+  margin-right: 8%;
 `;
 
 export const Containercarrossel = styled.div`
