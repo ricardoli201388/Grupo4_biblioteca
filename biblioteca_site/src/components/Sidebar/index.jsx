@@ -20,9 +20,9 @@ const sidebar = ({ active }) => {
             <FaTimes onClick={closeSidebar} />
             <Content>
                 <StyledLink to='/'><SidebarItem Icon={AiOutlineHome} Text="Home" /></StyledLink>
+                <StyledLink to='/dados'><SidebarItem Icon={CgProfile} Text="Perfil" /></StyledLink>
                 <StyledLink to='/Login'><SidebarItem Icon={BiLogIn} Text="Login" /></StyledLink>
                 <StyledLink to='/Login'><SidebarItem Icon={BiLogOut} Text="Logout" /></StyledLink>
-                <StyledLink to='/dados'><SidebarItem Icon={CgProfile} Text="Perfil" /></StyledLink>
             </Content>
         </Container>
     

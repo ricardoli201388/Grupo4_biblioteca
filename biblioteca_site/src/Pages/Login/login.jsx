@@ -1,15 +1,39 @@
-import { Container, Titulo, Caixa_texto, Texto, Botao} from "./styles";
-
+import { Container, Titulo, Caixa_texto, Texto, Botao, Form, Campo, Label, Input, Button} from "./styles";
+import { useState } from 'react'
+import api from '../../services/api'
 function Login(){
+const [email, setEmail] = useState("")
+const [senha, setSenha] = useState("")
 
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log({email, senha });
+    try {
+        const res = await api.post("/login", { email, senha });
+        console.log(res)
+    } catch(error){
+        alert(erro.message)
+    }
+};
 return (
     <Container>
-        <Titulo>Login</Titulo>  
-        <Texto>Nome do usuário:</Texto>
-    <Caixa_texto></Caixa_texto>
-        <Texto>Senha:</Texto>
-    <Caixa_texto></Caixa_texto>
-    <Botao>Login</Botao>
+         <Titulo>Login</Titulo>  
+    <Form onSubmit={handleSubmit}>
+        <Campo>
+            <Label htmlFor='email'>
+                E-mail:
+                <Input type='email' id='email' required onChange={(e) => setEmail(e.target.value)}/>
+            </Label>
+        </Campo>
+        <Campo>
+            <Label htmlFor='senha'>
+                Senha:
+                <Input type='password' id='senha' required onChange={(e) => setSenha(e.target.value)}/>
+            </Label>
+        </Campo>
+        <Button type='submit'>Login</Button> 
+    </Form>
+    
     </Container>
 )
 }
