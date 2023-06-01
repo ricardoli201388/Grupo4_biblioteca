@@ -38,7 +38,6 @@ export const Texto = styled.p`
   }
 `;
 export const Botao = styled.button`
-
   display: inline-block;
   margin-bottom: 10%;
   margin-top: 5%;
@@ -60,3 +59,5 @@ export const Botao = styled.button`
     font-size: 10px;
   }
 `;
+
+export const Valor = styled.span``;

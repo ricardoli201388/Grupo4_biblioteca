@@ -1,18 +1,29 @@
-import { Container, Titulo, Texto, Botao} from "./styles";
+import { Container, Titulo, Texto, Botao, Valor } from "./styles";
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import useAuthStore from "../../stores/auth";
 
-function Dados(){
+function Dados() {
+  const usuario = useAuthStore((state) => state.usuario);
 
-    return (
-        <Container>
-            <Titulo>Meus Dados</Titulo>  
-            <Texto>Nome do usuário:</Texto>
-            <Texto>Cargo:</Texto>
-            <Texto>E-mail:</Texto>
-        
-        <Link to='/Editar'><Botao>Editar dados</Botao></Link>
-        </Container>
-    )
-    }
-    export default Dados;
+  return (
+    <Container>
+      <Usuario usuario={usuario}></Usuario>
+      {/* <Titulo>Meus Dados</Titulo>
+      <Texto>
+        Nome do usuário: <Valor>{usuario.nome}</Valor>
+      </Texto>
+      <Texto>
+        Cargo: <Valor>{usuario.cargo}</Valor>
+      </Texto>
+      <Texto>
+        E-mail: <Valor>{usuario.email}</Valor>
+      </Texto> */}
+
+      <Link to="/Editar">
+        <Botao>Editar dados</Botao>
+      </Link>
+    </Container>
+  );
+}
+export default Dados;

@@ -81,7 +81,7 @@ export const Form = styled.form`
   height: 100%;
   background-color: #28846c;
   font-family: "poppins";
-`
+`;
 
 export const Campo = styled.div`
   margin-top: 0.5%;
@@ -94,9 +94,9 @@ export const Campo = styled.div`
     margin-top: 10%;
     margin-left: 15%;
   }
-`
+`;
 export const Label = styled.label`
-margin-top: 0.5%;
+  margin-top: 0.5%;
   margin-left: 30%;
   margin-bottom: 1%;
   font-size: 20px;
@@ -106,9 +106,9 @@ margin-top: 0.5%;
     margin-top: 10%;
     margin-left: 15%;
   }
-`
+`;
 export const Input = styled.input`
-margin-left: 30%;
+  margin-left: 30%;
   margin-right: 30%;
   border: none;
   border-radius: 6px;
@@ -118,9 +118,9 @@ margin-left: 30%;
     margin-left: 15%;
     margin-right: 15%;
   }
-`
+`;
 export const Button = styled.button`
-display: inline-block;
+  display: inline-block;
   margin-bottom: 10%;
   margin-top: 3%;
   margin-left: 40%;
@@ -141,4 +141,4 @@ display: inline-block;
     margin-right: 30%;
     font-size: 10px;
   }
-    `
+`;
