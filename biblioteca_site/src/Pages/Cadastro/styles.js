@@ -23,8 +23,8 @@ export const Titulo = styled.p`
 `;
 
 export const Caixa_texto = styled.input`
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
   border: none;
   border-radius: 6px;
   font-size: 30px;
@@ -70,4 +70,84 @@ export const Botao = styled.button`
     margin-right: 30%;
     font-size: 10px;
   }
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #28846c;
+  font-family: "poppins";
+`;
+
+export const Campo = styled.div`
+  margin-top: 0.5%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  font-size: 20px;
+  color: white;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+`;
+export const Label = styled.label`
+  margin-top: 0.5%;
+  margin-left: 30%;
+  margin-bottom: 1%;
+  font-size: 20px;
+  color: white;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+`;
+export const Input = styled.input`
+  width: 350px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: white;
+
+  @media (max-width: 700px) {
+    width: 200px;
+
+     }
+`;
+export const Button = styled.button`
+  display: inline-block;
+  margin-bottom: 10%;
+  margin-top: 3%;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  background-color: #83d7c1;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins";
+  @media (max-width: 700px) {
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 10px;
+  }
+`;
+
+export const Loading = styled.img`
+  margin-left: 20%;
+  margin-right: 20%;
+  overflow: hidden;
 `;
