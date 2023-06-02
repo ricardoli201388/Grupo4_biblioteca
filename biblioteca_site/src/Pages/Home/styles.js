@@ -53,7 +53,7 @@ export const ColunaCargo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 15%;
-  margin-right: 3%;
+  margin-right: 10%;
   @media (max-width: 700px) {
     display: ${(props) => (props.sumir ? "none" : "block")};
   }
@@ -62,8 +62,8 @@ export const ColunaCargo = styled.div`
 export const ColunaStatus = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 3%;
-  //margin-left: 1%;
+  margin-right: 8%;
+  margin-left: 5%;
   @media (max-width: 700px) {
     display: ${(props) => (props.sumir ? "none" : "block")};
   }
