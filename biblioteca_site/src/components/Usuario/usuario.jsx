@@ -1,17 +1,17 @@
-import { Container, Texto } from "./styles";
+import { Container, Texto, Titulo } from "./styles";
 
 export default function Usuario({ usuario }) {
   return (
     <Container>
       <Titulo>Meus Dados</Titulo>
       <Texto>
-        Nome do usuário: <Valor>{usuario.nome}</Valor>
+        Nome do usuário: <Texto>{usuario.nome}</Texto>
       </Texto>
       <Texto>
-        Cargo: <Valor>{usuario.cargo}</Valor>
+        Cargo: <Texto>{usuario.cargo}</Texto>
       </Texto>
       <Texto>
-        E-mail: <Valor>{usuario.email}</Valor>
+        E-mail: <Texto>{usuario.email}</Texto>
       </Texto>
     </Container>
   );

@@ -34,7 +34,7 @@ function Header() {
           <>
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/Dados">Perfil</StyledLink>
-            <h2>Seja bem-vindo {usuario.nome}</h2>
+           
             <BotaoLogout type="button" onClick={clearAuth}>
               Logout
             </BotaoLogout>

@@ -18,7 +18,7 @@ function Dados() {
       </Texto>
       <Texto>
         E-mail: <Valor>{usuario.email}</Valor>
-      </Texto> */}
+       </Texto> */}
 
       <Link to="/Editar">
         <Botao>Editar dados</Botao>

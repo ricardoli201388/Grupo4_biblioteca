@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const Titulo = styled.div`
+margin-top: 5%;
+    margin-left: 20%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  @media (max-width: 700px) {
+    font-size: 30px;
+    margin-left: 10%;
+  }
+
+`
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

@@ -29,7 +29,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log({ email, senha });
+    console.log({ email, senha });
     try {
       setCarregando(true);
       const res = await api.post("/login", { email, senha });
@@ -38,7 +38,7 @@ function Login() {
       setToken(token);
       navigate("/");
       //console.log(res);
-    } catch (error) {
+    } catch (erro) {
       console.error(erro);
       alert(erro.reponse.data.message);
     } finally {
