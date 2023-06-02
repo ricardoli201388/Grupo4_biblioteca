@@ -11,6 +11,7 @@ import {
   ColunaChegada,
   ColunaCronometro,
   Texto,
+  Loading,
 } from "./styles";
 
 import { Carousel } from "antd";
@@ -19,6 +20,7 @@ import {
   carrosselreclamações,
   carrosselnoticias,
   carrosselblog,
+  testebook,
 } from "../../assets";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -51,7 +53,7 @@ function Home() {
   if (carregando)
     return (
       <Container>
-        <h1>Carregando...</h1>
+        <Loading src={testebook}></Loading>
       </Container>
     );
 

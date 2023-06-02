@@ -1,19 +1,31 @@
-import { Container, Titulo, Caixa_texto, Texto, Botao, Form, Campo, Label, Input, Button} from "./styles";
-import { useState } from 'react'
-import api from '../../services/api'
+import {
+  Container,
+  Titulo,
+  Caixa_texto,
+  Texto,
+  Botao,
+  Form,
+  Campo,
+  Label,
+  Input,
+  Button,
+  Loading,
+} from "./styles";
+import { useState } from "react";
+import api from "../../services/api";
 import jwtDecode from "jwt-decode";
 import { useAuthStore } from "../../stores/auth";
 import { useNavigate } from "react-router";
+import { testebook } from "../../assets";
 
-
-function Login(){
-const [email, setEmail] = useState("")
-const [senha, setSenha] = useState("")
-const [carregando, setCarregando] = useState(false);
-const token = useAuthStore((state) => state.token);
-const usuario = useAuthStore((state) => state.usuario);
-const setToken = useAuthStore((state) => state.setToken );
-const navigate = useNavigate()
+function Login() {
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [carregando, setCarregando] = useState(false);
+  const token = useAuthStore((state) => state.token);
+  const usuario = useAuthStore((state) => state.usuario);
+  const setToken = useAuthStore((state) => state.setToken);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,9 +34,9 @@ const navigate = useNavigate()
       setCarregando(true);
       const res = await api.post("/login", { email, senha });
       const { token } = res.data;
-      
+
       setToken(token);
-      navigate('/')
+      navigate("/");
       //console.log(res);
     } catch (error) {
       console.error(erro);
@@ -37,7 +49,7 @@ const navigate = useNavigate()
   if (carregando)
     return (
       <Container>
-        <h1>Carregando...</h1>
+        <Loading src={testebook}></Loading>
       </Container>
     );
 
@@ -67,10 +79,9 @@ const navigate = useNavigate()
             />
           </Label>
         </Campo>
-        <Button type='submit'>Login</Button> 
-    </Form>
-    
+        <Button type="submit">Login</Button>
+      </Form>
     </Container>
-)
+  );
 }
 export default Login;

@@ -87,6 +87,13 @@ export const Containercarrossel = styled.div`
   margin-top: 2%;
   margin-bottom: 2%;
   overflow: hidden;
+  z-index: 1;
 `;
 
 export const Carrosselimg = styled.img``;
+
+export const Loading = styled.img`
+  margin-left: 20%;
+  margin-right: 20%;
+  overflow: hidden;
+`;

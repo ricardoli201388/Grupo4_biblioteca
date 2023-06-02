@@ -142,3 +142,9 @@ export const Button = styled.button`
     font-size: 10px;
   }
 `;
+
+export const Loading = styled.img`
+  margin-left: 20%;
+  margin-right: 20%;
+  overflow: hidden;
+`;
