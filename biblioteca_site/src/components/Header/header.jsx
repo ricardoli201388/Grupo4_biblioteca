@@ -28,14 +28,14 @@ function Header() {
       <Logo src={logoIcon} />
 
       <DivHeader>
-        <StyledLink to="/Login">Login</StyledLink>
-        <StyledLink to="/cadastro">Cadastre-se</StyledLink>
+        <StyledLink to="/Login" sumir>Login</StyledLink>
+        <StyledLink to="/cadastro" sumir>Cadastre-se</StyledLink>
         {!!usuario && (
           <>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/Dados">Perfil</StyledLink>
+            <StyledLink to="/" sumir>Home</StyledLink>
+            <StyledLink to="/Dados" sumir>Perfil</StyledLink>
            
-            <BotaoLogout type="button" onClick={clearAuth}>
+            <BotaoLogout type="button" onClick={clearAuth} sumir>
               Logout
             </BotaoLogout>
           </>

@@ -61,3 +61,7 @@ export const Botao = styled.button`
 `;
 
 export const Valor = styled.span``;
+
+export const Usuario = styled.div`
+
+`

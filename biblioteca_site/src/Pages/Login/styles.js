@@ -108,16 +108,18 @@ export const Label = styled.label`
   }
 `;
 export const Input = styled.input`
+  width: 350px;
   margin-left: 30%;
   margin-right: 30%;
   border: none;
   border-radius: 6px;
   font-size: 20px;
   background-color: white;
+
   @media (max-width: 700px) {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+    width: 200px;
+
+     }
 `;
 export const Button = styled.button`
   display: inline-block;
@@ -148,3 +150,7 @@ export const Loading = styled.img`
   margin-right: 20%;
   overflow: hidden;
 `;
+
+export const usuario = styled.div`
+
+`

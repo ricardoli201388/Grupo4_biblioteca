@@ -1,7 +1,8 @@
-import { Container, Titulo, Texto, Botao, Valor } from "./styles";
+import { Container, Titulo, Texto, Botao, Valor, Usuario } from "./styles";
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import useAuthStore from "../../stores/auth";
+
 
 function Dados() {
   const usuario = useAuthStore((state) => state.usuario);

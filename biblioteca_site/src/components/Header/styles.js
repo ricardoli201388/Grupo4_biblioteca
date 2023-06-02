@@ -96,24 +96,21 @@ export const StyledLink = styled(Link)`
   color: white;
   font-family: "poppins", sans-serif;
   margin-right: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 25px;
   background-color: #0e5a46;
   text-decoration: none;
 
   &:hover {
     color: black; 
-    /* transition: .4s */
-    /* border: solid;
+    /* transition: .4s */ 
+    border: solid;
     border-color: white;
-    border-width: 1px; */
+    border-width: 1px;
   }
 
-  @media (max-width: 700px) {
-    font-size: 12px;
-    margin-right: 3px;
-    margin-top: 30px;
-    margin-left: 5px;
+  @media (max-width: 870px) {
+    display: ${(props) => (props.sumir ? "none" : "block")};
   }
 `;
 
@@ -131,6 +128,10 @@ export const BotaoLogout = styled.button`
 
   &:hover {
     color: black;
+  }
+
+  @media (max-width: 870px) {
+    display: ${(props) => (props.sumir ? "none" : "block")};
   }
 
 `
