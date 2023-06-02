@@ -11,7 +11,6 @@ import {
   ColunaChegada,
   ColunaCronometro,
   Texto,
-  Loading,
 } from "./styles";
 
 import { Carousel } from "antd";
@@ -20,45 +19,40 @@ import {
   carrosselreclamações,
   carrosselnoticias,
   carrosselblog,
-  testebook,
 } from "../../assets";
+import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import api from "../../services/api";
-import { Usuario } from "../../components";
 
 function Home() {
-  const [usuarios, setUsuarios] = useState([]);
-  const [carregando, setCarregando] = useState(false);
+const [usuarios, setUsuarios] = useState([])
+const [carregando, setCarregando] = useState(false)
+const getUsuarios = async () => {
+  try {
+    setCarregando(true);
+    const res = await api.get("/usuarios");
+    setUsuarios(res.data);
+  } catch (error) {
+    console.error(erro);
+    alert(erro.reponse.data.message);
+  } finally {
+    setCarregando(false);
+  }
+}
 
-  //console.log(usuarios);
 
-  const getUsuarios = async () => {
-    try {
-      setCarregando(true);
-      const res = await api.get("/usuarios");
-      setUsuarios(res.data);
-    } catch (error) {
-      console.error(erro);
-      alert(erro.reponse.data.message);
-    } finally {
-      setCarregando(false);
-    }
-  };
+useEffect(() => {}, [])
 
-  useEffect(() => {
-    getUsuarios();
-  }, []);
-
-  if (carregando)
-    return (
-      <Container>
-        <Loading src={testebook}></Loading>
-      </Container>
-    );
+if (carregando)
+return (
+  <Container>
+    <h1>Carregando...</h1>
+  </Container>
+);
 
   return (
     <Container>
+      {/* {usuarios.map((usuario) => <h1>{usuario.nome}</h1>)} */}
       <Containercarrossel>
         <Carousel autoplay>
           <Carrosselimg src={carrosselprojetos} />
@@ -112,11 +106,6 @@ function Home() {
           <Texto>00:20</Texto>
         </ColunaCronometro>
       </Tabela>
-
-      {usuarios.map((usuario) => (
-        <Usuario usuario={usuario} />
-        //<Texto>{usuario.nome}</Texto>
-      ))}
     </Container>
   );
 }
